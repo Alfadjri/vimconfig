@@ -1,0 +1,28 @@
+local setup,nvimtree = pcall(require,"nvim-tree")
+if not setup then
+  return
+end
+
+vim.g.loaded = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- warna arraw
+vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF]])
+
+nvimtree.setup({
+  renderer = {
+    glyphs = {
+      folder = {
+        arrow_closed = "→",
+        arraw_open = "↓",
+      }, 
+    },
+  },
+  actions = {
+    open_file = {
+      window_picker = {
+        enable = false,
+      },
+    },
+  },
+})

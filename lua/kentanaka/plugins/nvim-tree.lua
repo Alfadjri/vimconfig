@@ -11,11 +11,13 @@ vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF]])
 
 nvimtree.setup({
   renderer = {
-    glyphs = {
-      folder = {
-        arrow_closed = "→",
-        arraw_open = "↓",
-      }, 
+    icons = {
+      glyphs = {
+        folder = {
+          arrow_closed = "→",
+          arrow_open = "↓",
+        }, 
+      },
     },
   },
   actions = {

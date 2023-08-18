@@ -47,6 +47,7 @@ return packer.startup(function(use)
   -- managin & installing lsp server
   use("williamboman/mason.nvim")
   use("williamboman/mason-lspconfig.nvim")
+  use("lukas-reineke/lsp-format.nvim")
   
   use("neovim/nvim-lspconfig")
   use("hrsh7th/cmp-nvim-lsp")
@@ -54,7 +55,10 @@ return packer.startup(function(use)
   use("jose-elias-alvarez/typescript.nvim")
   use("onsails/lspkind.nvim")
   use("jose-elias-alvarez/null-ls.nvim")
+
   use("jayp0521/mason-null-ls.nvim")
+  -- background transparant
+  use("xiyaowong/transparent.nvim")
   
   use({
     "nvim-treesitter/nvim-treesitter",

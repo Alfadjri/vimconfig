@@ -24,6 +24,7 @@ treesitter.setup({
     "lua",
     "vim",
     "dockerfile",
+    "php",
     "gitignore",
   },
   auto_install = true,
